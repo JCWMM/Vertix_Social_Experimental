@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vertix Social (JC's Experimental Version)</title>
+	<link rel="stylesheet" href="clans.css" />
+	<link rel="shortcut icon" type="image/png" href="/images/favicon.png?v=12"/>
+</head>
+<body>	
+	<nav>
+		<ul id="n" class="clearfix">
+			<li><a target="_blank" href="http://vertix.io">Play</a></li>
+			<li><a href="#">Profile</a></li>
+			<li><a href="#">Achievements</a></li>
+			<li class="sel"><a href="clans.html">Clans</a></li>
+			<li class="#"><a href="leaderboards.html">Leaderboards</a></li>
+			<li><a href="#">Find Friends</a></li>
+			<li><a href="http://vertix.io/donate.html">Donate</a></li>
+		</ul>
+	</nav>
+	<div id="content" class="clearfix">
+		<section id="left">
+		<div class="contentCard">
+			<div style="color:#969696;font-size:22px;padding:10px;font-size:25px;margin-top:5px;"><b>Leaderboards</b></div>
+			<div id="ClnRankButton" onclick="toggleLeaderboardDisplay('rank');" class="changeLeaderbordButton activeButton"><b>Rank</b></div>
+						<div id="newClnButton" onclick="toggleLeaderboardDisplay('kdr2');" class="changeLeaderbordButton"><b>Newest</b></div>
+			<div id="kdrButton" onclick="toggleLeaderboardDisplay('kdr');" class="changeLeaderbordButton"><b>KDR</b></div>
+			<div id="clnKillsButton" onclick="toggleLeaderboardDisplay('kills');" class="changeLeaderbordButton"><b>Kills</b></div>
+			<div id="clnMemButton" onclick="toggleLeaderboardDisplay('clnRank');" class="changeLeaderbordButton"><b>Number Of Members</b></div>
+			<div id="clnKdrButton" onclick="toggleLeaderboardDisplay('clnKdr');" class="changeLeaderbordButton"><b>Clans (KDR)</b></div>
+			
+			<div id="clnRankLeaderboard" class="leaderboardContainer">
+				<div class="leaderMessage"><b>Loading...</b></div>
+			</div>
+			<div id="kdrLeaderboard" style="display:none" class="leaderboardContainer">
+				<div class="leaderMessage"><b>Loading...</b></div>
+			</div>
+			<div id="newClnLeaderboard" style="display:none" class="leaderboardContainer">
+				<div class="leaderMessage"><b>Loading...</b></div>
+			</div>
+			<div id="clnKillsLeaderboard" style="display:none" class="leaderboardContainer">
+				<div class="leaderMessage"><b>Loading...</b></div>
+			</div>
+			<div id="clnMemLeaderboard" style="display:none" class="leaderboardContainer">
+				<div class="leaderMessage"><b>Loading...</b></div>
+			</div>
+			<div id="clnKdrLeaderboard" style="display:none" class="leaderboardContainer">
+				<div class="leaderMessage"><b>Loading...</b></div>
+			</div>
+		</div>
+		</section>			
+	</div>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://cdn.socket.io/socket.io-1.4.5.js"></script>
+	<script src="clans.js"></script>
+</body>
+	
+	
+</html>
